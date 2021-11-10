@@ -1,0 +1,68 @@
+
+Endpoint
+----------http://localhost:8081/catalog/movies-------
+List of movies from Movie Catalog
+
+
+[
+{
+"id": 1,
+"name": "Matrix",
+"desc": "A good movie",
+"genre": "Action",
+"rating": "3 stars",
+"price": 150.0,
+"seatsToBook": 2
+},
+{
+"id": 2,
+"name": "Hera pheri",
+"desc": "Great movie to watch",
+"genre": "Comedy",
+"rating": "3.5 stars",
+"price": 160.0,
+"seatsToBook": 4
+},
+{
+"id": 4,
+"name": "The Conjuring",
+"desc": "Excellent movie",
+"genre": "Drama",
+"rating": "4 stars",
+"price": 200.0,
+"seatsToBook": 9
+}
+]
+
+
+
+---------To book a particular movie-----
+
+Endpoint
+http://localhost:8081/catalog/movies/testing
+
+Request----
+
+
+
+
+{
+"id": 2,
+"name": "Hera pheri",
+"desc": "Great movie to watch",
+"genre": "Comedy",
+"rating": "3.5 stars",
+"price": 160.0,
+"seatsToBook": 9
+}
+
+
+-----Response-----
+
+{
+    "transactionId": "7m3ox7PKi5SgSTJG",
+    "movieId": "2",
+    "modeOfPayment": "ONLINE-CREDIT CARD",
+    "totAmountPaid": 1440.0,
+    "payStatus": true
+}
